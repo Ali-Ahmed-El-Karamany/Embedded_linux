@@ -1,0 +1,21 @@
+#!/bin/bash
+
+cd ~
+
+mkdir script_exercise
+
+cd script_exercise
+
+for var in {1..5}
+do
+	echo $(date) >> "file${var}.txt"
+done
+
+for x in {1..5}
+do
+	echo "file${x} contetnt"
+	cat "file${x}.txt"
+done
+
+
+
