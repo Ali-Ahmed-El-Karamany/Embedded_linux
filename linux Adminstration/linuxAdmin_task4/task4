@@ -1,0 +1,19 @@
+#!/bin/bash
+
+sudo adduser aliuser
+
+sudo groupadd aligroup
+
+sudo usermod -aG aligroup aliuser
+
+
+if grep "aliuser" /etc/passwd; then
+	if grep "aligroup" /etc/group; then
+		clear
+		cat /etc/passwd | grep aliuser
+		cat /etc/group |grep aligroup
+	fi
+else
+	echo "user or group not found"
+fi
+
