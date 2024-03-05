@@ -50,6 +50,15 @@ sudo groupdel groupName
 - adduser: provides guides through user creation process
 - useradd: provides complete control through user creation process
 
+## task_5: permissions
+#### 1. Create a folder called myteam and change its permissions to read only for the owner
+```
+mkdir myteam | sudo chmod u-wx myteam
+```
+#### 2. Log out and log in by another user
+```
+pkill -KILL -u userName
+```
 
 
 ## task_6: for loop
