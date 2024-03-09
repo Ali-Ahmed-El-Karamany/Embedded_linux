@@ -1,12 +1,12 @@
 #!/bin/bash
 
-cd /home/aly/NTI/task_3
+cd /home/aly/NTI/Embedded_linux/linux\ Adminstration/linuxAdmin_task3
 
-if test -f newEnv_variable; then
+if test -f /home/aly/.bashrc; then
 	echo "HELLO=$HOSTNAME" >> /home/aly/.bashrc
 	echo "LOCAL=$(whoami)" >> /home/aly/.bashrc
 
-	gnome-terminal
+	gnome-terminal & disown
 
 else
 	echo "file does not exist"
