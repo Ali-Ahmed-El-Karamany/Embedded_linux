@@ -2,15 +2,14 @@
 
 ## 1. Automated backups
 
-Script takes a list of directories as arguments and creates a compressed backup (tarball) of each specified directory
+This Bash script automates the process of creating compressed backups (tarballs) of specified directories. It includes the current date in the backup filenames and stores them in a designated backup directory.
 
-- The script accept one or more directory paths as command-line arguments.
+- Backup Automation: Easily create compressed backups of multiple directories with a single command.
+- Customizable Backup Directory: Backups are stored in a designated directory for organization and easy access.
+- Date Stamped Backups: Each backup filename includes the current date for quick identification of backup versions.
+- Simple Usage: Just specify the directories you want to back up as arguments to the script.
 ```bash
 ./backup_script.sh /path/to/directory1 /path/to/directory2 ...
 ```
-- creates a compressed backup file in the format backup_<directory>_<date>.tar.gz.
-- all backup files placed in a backup directory named backups within the script's working directory.
-- The script creates the backups directory if it does not exist.
-
 
 
