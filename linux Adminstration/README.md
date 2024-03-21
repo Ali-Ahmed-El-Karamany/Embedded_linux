@@ -1,13 +1,13 @@
 # Linux Administration tasks
 This repo contains Linux administration tasks
 
-## task_1: directories creation
+## Task #1: Directories Creation
 #### 1. bash script to make:
   - creating directories
   - copying and moving files
   - renaming directories
 
-## task_3: modifying .bashrc file
+## Task #3: Modifying .bashrc File
 #### 1. bash script to make:
   - checking if the file exists
   - append new environment variables in .bashrc file
@@ -24,7 +24,7 @@ sudo find / -name .profile
 >> '-name' to search by name
 
     
-## task_4: user and group creation
+## Task #4: User and Group Creation
 #### 1. bash script to make:
 - creating new user and group
 - append user to a new group
@@ -49,7 +49,7 @@ sudo groupdel groupName
 - adduser: is native binary compiled with the system and more user friendly and interactive than its back-end useradd
 - useradd: is a perl script which uses useradd binary in back-end.
 
-## task_5: permissions
+## task #5: Permissions
 ### Section 1:
 #### 1. Create a folder called myteam and change its permissions to read only for the owner
 ```bash
@@ -111,7 +111,7 @@ sudo adduser user2
 ```
 
 
-## task_6: for loop
+## Task #6: For Loop
 #### 1. bash script to make:
   - creating multiple files
   - append date to the created files
