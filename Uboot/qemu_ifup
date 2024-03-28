@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ip a add 192.168.1.92/24 dev $1
+ip link set $1 up
+
