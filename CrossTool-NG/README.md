@@ -20,7 +20,8 @@ git checkout 25f6dae8
 ```bash
 ./bootstrap    # setup the environment
 ./configure --enable-local  # The Program will be installed in the current directory
-make      # to generate the Makefile for CroosTool-NG
+  make      # to generate the Makefile for CroosTool-NG
+  make install
 ```
 
 ## Building the Toolchain
