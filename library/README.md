@@ -48,9 +48,9 @@ file of the library to it and calls the functions of the library
 ```bash
 gcc main.c -static -o my_program -I include/ -L. lib/myMath.a
 ```
-`-static` tells the compiler to compile statically
-`-I` tells the compiler where to find the header file
-`-L` tells the linker to look for libraries in the current directory
+- `-static` tells the compiler to compile statically
+- `-I` tells the compiler where to find the header file
+- `-L` tells the linker to look for libraries in the current directory
 
 
 #### 6. Run the Program
@@ -85,7 +85,8 @@ compile the source files into .so(shared object) files
 ```bash
 gcc -shared -fPIC -o lib/libmyMath.so code/*.c
 ```
-The `-shared` flag indicates that you are creating a shared object, and `-fPIC` generates position-independent code, which is necessary for shared libraries.
+- `-shared` flag indicates that you are creating a shared object, and 
+- `-fPIC` generates position-independent code, which is necessary for shared libraries.
 
 #### 3. Use the library in the Program
 
@@ -98,7 +99,9 @@ file of the library to it and calls the functions of the library
 ```bash
 gcc main.c -o my_program -I include -L./lib -lmyMath -Wl,-rpath=./lib
 ```
-`-I` tells the compiler where to find the header file, `-L` tells the linker to look for libraries in the current directory, '-lmylib' links your program with libmylib.so, and `-Wl,-rpath=./lib` tells the sysytem loader where to search for the shared object file
+- `-I` tells the compiler where to find the header file 
+- `-L` tells the linker to look for libraries in the current directory, '-lmylib' links your program with libmylib.so
+- `-Wl,-rpath=./lib` tells the sysytem loader where to search for the shared object file
 
 
 #### 5. Run the Program
