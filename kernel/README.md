@@ -42,4 +42,4 @@ make -j4 zImage modules dtbs
 ```
 > Output will be in arch/arm/boot 
 
-:exclamation: NOTE: Kernel Will Panic since there is  root file system
+:exclamation: NOTE: Kernel Will Panic since there is no root file system
