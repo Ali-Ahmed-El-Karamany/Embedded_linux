@@ -55,7 +55,7 @@ cp linux/arch/arm/boot/dts/*-ca9.dtb /sdcard/sd
 Start Qemu to boot on U-boot
 
 ```bash
-sudo qemu-system-arm -M vexpress-a9 -m 128M -nographic -kernel u-boot -sd sd.img
+sudo qemu-system-arm -M vexpress-a9 -m 128M -nographic -kernel u-boot -sd sdcard/sd.img
 ```
 
 load kernel image `zImage` and DTB `vexpress-v2p-ca9.dtb` from sdcard into RAM
