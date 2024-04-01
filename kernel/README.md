@@ -42,4 +42,35 @@ make -j4 zImage modules dtbs
 ```
 > Output will be in arch/arm/boot 
 
+
+## Boot the Kernel
+
+Copy the zImage and dtb file to the **boot partition in the sd card**
+
+```bash
+cp linux/arch/arm/boot/zImage /sdcard/sd
+cp linux/arch/arm/boot/dts/*-ca9.dtb /sdcard/sd
+```
+
+Start Qemu to boot on U-boot
+
+```bash
+sudo qemu-system-arm -M vexpress-a9 -m 128M -nographic -kernel u-boot -sd sd.img
+```
+
+load kernel image `zImage` and DTB `vexpress-v2p-ca9.dtb` from sdcard into RAM
+
+```bash
+fatload $kernel_addr_r zImage
+fatload $fdt_addr_r vexpress-v2p-ca9.dtb
+```
+
+boot the kernel with its device tree
+
+```bash
+bootz $kernel_addr_r - $fdt_addr_r
+```
+
+
+
 :exclamation: NOTE: Kernel Will Panic since there is no root file system
