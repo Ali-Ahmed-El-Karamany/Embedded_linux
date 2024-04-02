@@ -91,7 +91,7 @@ cfdisk sd.img
 
 #### :exclamation: **do not foget to save** -->  select `write` to apply changes
 
-### Loop Driver FOR Virtual usage ONLY
+### Loop Device FOR Virtual usage ONLY
 
 To emulate the sd.img file as sd card we need to attach it to **loop device** to be as a **block storage**
 
