@@ -132,8 +132,6 @@ dd if=/dev/zero of=/dev/sd<X> bs=1M
 # copy the Sd image to the SD card
 dd if=output/images/sdcard.img of=/dev/sd<x>
 ```
-### SSH
-
 
 ## Custom Package
 
