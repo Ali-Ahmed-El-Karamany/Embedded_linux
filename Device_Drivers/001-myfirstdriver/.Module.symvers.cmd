@@ -1,0 +1,1 @@
+savedcmd_/home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/Module.symvers :=  scripts/mod/modpost -m -a      -o /home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/Module.symvers -T /home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/modules.order -i Module.symvers -e 

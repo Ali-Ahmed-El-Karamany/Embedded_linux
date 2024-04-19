@@ -1,0 +1,1 @@
+savedcmd_/home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/modules.order := {   echo /home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/mydriver.o; :; } > /home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/modules.order
