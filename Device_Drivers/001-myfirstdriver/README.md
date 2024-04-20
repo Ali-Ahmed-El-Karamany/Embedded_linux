@@ -41,9 +41,11 @@ module_exit();
 
 `module_exit()` It is the exit point for kernel space.
 
-`static void __init` to put the function **mydriver_init** in **.init** section when it is invoked.  **__init** used to remove the function from the memory after the execution. 
+`static int __init` to put the function **mydriver_init** in **.init** section when it is invoked.  **__init** used to remove the function from the memory after the execution. 
 
-`static void __exit` to put the function **mydriver_exit** in **.exit** section when it is invoked.  **__exit** used to remove the function from the memory after the execution to save resources.
+`static void __exit` to put the function **mydriver_exit** in **.exit** section when it is invoked.  **__exit** used to delete the **exit section** from the RAM in static modules.
+
+`static` used to make the function specific to the module and to not be used drom another modules.
 
 ### Makefile
 To build the kernel module we should use a Make file.
