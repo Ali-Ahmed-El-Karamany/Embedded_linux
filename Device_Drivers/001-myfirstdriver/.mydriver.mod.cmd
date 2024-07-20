@@ -1,1 +1,0 @@
-savedcmd_/home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/mydriver.mod := printf '%s\n'   mydriver.o | awk '!x[$$0]++ { print("/home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/"$$0) }' > /home/aly/NTI/Embedded_linux/Device_Drivers/001-myfirstdriver/mydriver.mod
